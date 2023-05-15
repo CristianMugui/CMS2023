@@ -1,0 +1,38 @@
+.contacto{
+    background-image: url(../img/map-image.png);
+    background-color: #212529;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-size: cover;
+    &__contenedor{
+        &__form{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 3rem;
+            justify-content: center;
+            &__col{
+                width: calc(50% - 1.5rem);
+                display: flex;
+                flex-direction: column;
+                row-gap: 3rem;
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                }
+                &--formGroup{
+                    input,
+                    textarea{
+                        width: 100%;
+                        padding: 2rem;
+                        box-sizing: border-box; //corrige el error de sumar el 100% mas el 2 de padding y no lo suma
+                        font-family: $font-roboto;
+                        font-size: 1.6rem;
+                        border-radius: .5rem;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+            }            
+        }
+    }
+
+}

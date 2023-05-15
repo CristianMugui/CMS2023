@@ -1,0 +1,39 @@
+.footer{
+    &__contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{                        
+                font-size: 1.5rem;
+                border: 0.5rem solid #000;
+                border-radius: 50%;
+                width: 3.5rem;
+                height: 3.5rem;
+                background-color: #000;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a{
+                margin: 0 1rem;
+                width: auto;
+                outline: none;
+            }
+        }
+        &__privacyTerms{
+            display: flex;
+            justify-content: space-between;
+            &--privacy{
+                margin: 0 1rem;
+            }
+            &--terms{
+                margin: 0 1rem;
+            }
+        }
+    }
+}
